@@ -24,7 +24,7 @@ public class PowerBall {
 	
 	private int setMultiplier() {	//randomly sets a multiplier 2, 3, 4, 5, or 10
 		Random random = new Random();
-		int randMultiplier = random.nextInt(6)+1;
+		int randMultiplier = random.nextInt(6)+2;
 		if(randMultiplier == 6) {
 			randMultiplier = 10;
 		}
@@ -55,6 +55,14 @@ public class PowerBall {
 	
 	public int getPowerballNumber() {
 		return this.powerBallNumber;
+	}
+	
+	public boolean isMultiplied() {
+		return this.multiplier;
+	}
+	
+	public int getMultiplier() {
+		return this.multiplierValue;
 	}
 	
 	
